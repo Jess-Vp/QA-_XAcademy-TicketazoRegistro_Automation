@@ -75,7 +75,6 @@ Acción: Dejar Provincia vacía pero completar Localidad.
 <!-- - Prevención de doble submit
 Acción: Hacer doble click rápido en Registrarse.
 **Resultado Esperado: Se envía una sola vez (se intercepta un solo request al backend).
-
 - Error de servidor 422 (duplicado)
 Acción: Completar datos válidos con email ya existente; backend responde 422.
-** Resultado Esperado: El formulario no redirige; se mantiene en /auth/registerUser; los campos conservan valores; la UI debería mostrar mensaje (“ya existe una cuenta con ese email”). -->
+** Resultado Esperado: El formulario no redirige; se mantiene en /auth/registerUser; los campos conservan valores; la UI debería mostrar un mensaje (“ya existe una cuenta con ese email”). -->
