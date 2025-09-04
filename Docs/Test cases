@@ -1,6 +1,3 @@
-# QA-_XAcademy-TicketazoRegistro_Automation
-Repo del ejercicio de la clase nº 7 de la automatización de la vista de Registro de la pagina Ticketazo
-
 
 ** Test cases ** 
 
@@ -20,7 +17,7 @@ Casos Positivos (Happy Path)
 "Validación de maxlength en Teléfono y DNI"
 - Teléfono: no permite escribir más de 10
 - DNI: no permite escribir más de 8
-** Resultado esperado: Los campos limitan la entrada y no se rompe el formulario.
+** Resultado esperado: Los campos limitan la entrada y no se rompe el form.
 
 
 "Enmascaramiento de contraseñas"
@@ -74,3 +71,11 @@ Acción: Completar todo menos Provincia/Localidad.
 Acción: Dejar Provincia vacía pero completar Localidad.
 ** Resultado Esperado: El formulario no avanza; debería mostrar error de dependencia (Provincia requerida antes que Localidad).
 
+<!-- // No se incluye porque no funcionaron xd  -->
+<!-- - Prevención de doble submit
+Acción: Hacer doble click rápido en Registrarse.
+**Resultado Esperado: Se envía una sola vez (se intercepta un solo request al backend).
+
+- Error de servidor 422 (duplicado)
+Acción: Completar datos válidos con email ya existente; backend responde 422.
+** Resultado Esperado: El formulario no redirige; se mantiene en /auth/registerUser; los campos conservan valores; la UI debería mostrar mensaje (“ya existe una cuenta con ese email”). -->
